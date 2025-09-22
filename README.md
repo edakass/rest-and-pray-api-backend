@@ -34,7 +34,7 @@ The goal of Rest and Pray API is to provide a backend service where users can re
 
 ## Project Progress
 
-### ✅ Done
+### Done
 - [x] Project setup with Spring Boot & Maven  
 - [x] User registration and login system  
 - [x] Location search by user input  
