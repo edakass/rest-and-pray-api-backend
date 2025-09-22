@@ -30,3 +30,21 @@ The goal of Rest and Pray API is to provide a backend service where users can re
 - Improve search with map integration
 
 - Deploy a demo version for testing
+
+
+## Project Progress
+
+### Done
+- [x] Project setup with Spring Boot & Maven  
+- [x] User registration and login system  
+- [x] Location search by user input  
+- [x] Location search by current location  
+
+### To Do
+- [ ] Place management 
+- [ ] Improve search with categories & filters  
+- [ ] Map integration (Leaflet/Google Maps)  
+- [ ] Deployment (demo version on cloud)  
+- [ ] Add API documentation (Swagger / OpenAPI)  
+- [ ] Write unit & integration tests  
+
