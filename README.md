@@ -4,29 +4,29 @@ A personal side project I am currently working on.
 
 The goal of Rest and Pray API is to provide a backend service where users can register, log in, and interact with location-based features such as searching by current location.
 
-_⚠️ This project is still under active development. Features and structure may change over time.
+>⚠️ This project is still under active development. Features and structure may change over time.
 
 
 ## Current Features
 
-User registration and login system
+- User registration and login system
 
-Location search (based on user input or current location)
+- Location search (based on user input or current location)
 
 ## Tech Stack
 
-Java 17
+- Java 17
 
-Spring Boot
+- Spring Boot
 
-Maven
+- Maven
 
-RESTful API design
+- RESTful API design
 
 ## Roadmap
 
-Add place management (create and store places in backend)
+- Add place management (create and store places in backend)
 
-Improve search with map integration
+- Improve search with map integration
 
-Deploy a demo version for testing
+- Deploy a demo version for testing
