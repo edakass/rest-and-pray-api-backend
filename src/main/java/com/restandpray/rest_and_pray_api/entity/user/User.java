@@ -1,4 +1,4 @@
-package com.restandpray.rest_and_pray_api.entity;
+package com.restandpray.rest_and_pray_api.entity.user;
 
 import jakarta.persistence.*;
 
@@ -31,7 +31,6 @@ public class User {
     private Instant createdAt = Instant.now();
 
     public User() {
-
     }
 
     public Long getId() {
