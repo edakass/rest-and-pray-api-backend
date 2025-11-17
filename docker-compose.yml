@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: restpray-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: restpraydb
+      MYSQL_USER: restpray
+      MYSQL_PASSWORD: restpray
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: restpray-backend
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/restpraydb
+      SPRING_DATASOURCE_USERNAME: restpray
+      SPRING_DATASOURCE_PASSWORD: restpray
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:
